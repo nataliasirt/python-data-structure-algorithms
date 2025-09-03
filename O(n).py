@@ -4,7 +4,7 @@
 #The function signature should be: def print_items(n):
 
 def print_items(n):  # print_items accepts one argument 'n'. It will print a sequence of numbers from 0 up to, but not including, 'n'.
-    for i in range(n):
+    for i in range(n):   # 'i' takes the current number in the sequence from 0 up to but not including 'n'.
         print(i)
 
 print_items(10)
