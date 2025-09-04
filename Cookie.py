@@ -19,3 +19,4 @@ cookie_one.set_color('yellow')
 
 print('\nCookie one is now', cookie_one.get_color())
 print('Cookie two is still', cookie_two.get_color())
+#practice encapsulation by using getter and setter methods to access and modify the color attribute of Cookie objects.
