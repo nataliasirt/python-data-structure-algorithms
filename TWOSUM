@@ -1,0 +1,17 @@
+#Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+class Solution(object):
+    def twoSum(self, nums, target): #defines a method twoSum that takes a list of integers nums and an integer target as input
+        seen = {}  # empty dictionary to store number and its index; key: number, value: index
+        for i, num in enumerate(nums):
+            diff = target - num
+            if diff in seen:  # if we've seen the complement before
+                return [seen[diff], i]
+            seen[num] = i  # store index of current number
+# Example usage:
+if __name__ == "__main__":
+    nums = [2, 7, 11, 15]
+    target = 9
+
+    solution = Solution()
+    result = solution.twoSum(nums, target)
+    print("Result:", result)
